@@ -1,0 +1,139 @@
+/* Crimson Text: CSS classes take from Google fonts*/
+.crimson-text-regular {
+    font-family: "Crimson Text", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .crimson-text-semibold {
+    font-family: "Crimson Text", serif;
+    font-weight: 600;
+    font-style: normal;
+  }
+  
+  .crimson-text-bold {
+    font-family: "Crimson Text", serif;
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  .crimson-text-regular-italic {
+    font-family: "Crimson Text", serif;
+    font-weight: 400;
+    font-style: italic;
+  }
+  
+  .crimson-text-semibold-italic {
+    font-family: "Crimson Text", serif;
+    font-weight: 600;
+    font-style: italic;
+  }
+  
+  .crimson-text-bold-italic {
+    font-family: "Crimson Text", serif;
+    font-weight: 700;
+    font-style: italic;
+  }
+  
+
+
+
+* { /*apply to everything*/
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body and general layout */
+body {
+    font-family: "Crimson Text", serif;
+    background-color: #f4f4f4;
+    display: flex;
+    height: 100vh;
+    overflow: hidden;
+}
+
+/* Sidebar styles */
+.sidebar {
+    width: 250px;
+    background-color: white;
+    padding-top: 20px;
+    position: fixed;
+    height: 100%;
+    top: 0;
+    left: 0;
+    /* box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1); */
+}
+
+/* Logo at the top of the sidebar */
+.logo {
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.logo img {
+    width: 80%; /* Adjust logo size */
+    height: auto;
+    max-width: 150px; /* Limit logo width */
+}
+
+.sidebar h1 {
+    display: block;
+    color: black;
+    padding: 15px 20px;
+    text-decoration: none;
+    text-align: center;
+    font-size: 18px;
+    /* border-bottom: 1px solid #34495e;*/
+    transition: background-color 0.3s ease;
+}
+
+.sidebar a {
+    display: block;
+    color: black;
+    padding: 15px 20px;
+    text-decoration: none;
+    font-size: 18px;
+    text-align: center;
+    /*border-bottom: 1px solid #34495e;*/
+    transition: background-color 0.3s ease;
+}
+
+.sidebar a:hover {
+    background-color: #34495e;
+}
+
+.sidebar a.active {
+    background-color: #1abc9c;
+}
+
+/* Main content area */
+.main-content {
+    margin-left: 250px;
+    padding: 20px;
+    flex-grow: 1;
+    background-color: white;
+    height: 100%;
+}
+
+.header {
+    padding: 15px;
+    background-color: white;
+    color: black;
+    text-align: center;
+    font-size: 24px;
+}
+
+.section {
+    margin-top: 20px;
+}
+
+.section h2 {
+    margin-bottom: 10px;
+    color: #2c3e50;
+}
+
+.section p {
+    color: #7f8c8d;
+}
+
