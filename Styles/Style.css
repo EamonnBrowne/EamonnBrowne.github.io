@@ -45,13 +45,13 @@
 }
 
 /* Body and general layout */
-body {
-    font-family: "Crimson Text", serif;
-    background-color: #f4f4f4;
-    display: flex;
-    height: 100vh;
-    overflow: hidden;
+html, body {
+    height: auto; /* Allow the height to expand based on content */
+    min-height: 100%; /* Ensure it covers at least the viewport height */
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+    overflow-y: auto; /* Enable vertical scrolling */
 }
+
 
 /* Sidebar styles */
 .sidebar {
@@ -109,12 +109,14 @@ body {
 
 /* Main content area */
 .main-content {
-    margin-left: 250px;
+    margin-left: 250px; /* Space for the sidebar */
     padding: 20px;
-    flex-grow: 1;
     background-color: white;
-    height: 100%;
+    min-height: 100%; /* Ensure it grows with the content */
+    height: auto; /* Let it expand based on content */
+    overflow: visible; /* Allow content to flow */
 }
+
 
 .header {
     padding: 15px;
@@ -128,12 +130,117 @@ body {
     margin-top: 20px;
 }
 
-.section h2 {
-    margin-bottom: 10px;
-    color: #2c3e50;
+.section ul li {
+    display: flex; /* Align image and text side by side */
+    flex-wrap: wrap; /* Allow wrapping if the content overflows */
+    align-items: flex-start; /* Align items to the top */
+    gap: 20px; /* Add space between image and text */
+    margin-bottom: 30px; /* Add space between list items */
 }
+
+
+.section img {
+    flex-shrink: 0; /* Prevent image from resizing with text */
+}
+
+.section ul li strong, 
+.section ul li p {
+    margin-left: 10px; /* Add spacing between the text and image */
+}
+
 
 .section p {
     color: #7f8c8d;
 }
 
+/* Menu Section Styling - Andy */
+
+.section {
+    background-color: #f8f9fa; /* Subtle light gray */
+    padding: 20px;
+    border-radius: 10px; /* Rounded corners for sections */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    margin-bottom: 30px; /* Add spacing between sections */
+}
+
+/* Headings Styling */
+.section h2 {
+    font-size: 28px; /* Slightly larger for emphasis */
+    font-weight: bold;
+    color: #2c3e50; /* Darker color for visibility */
+    text-transform: capitalize; /* Capitalize headings */
+    border-bottom: 2px solid #1abc9c; /* Add a decorative underline */
+    padding-bottom: 10px; /* Space below the heading */
+    margin-bottom: 20px; /* Space between heading and content */
+    text-align: center; /* Center align the heading */
+}
+
+/* Align Items Using Grid for Better Flow */
+.section ul li {
+    display: grid; /* Use grid for better alignment */
+    grid-template-columns: auto 1fr auto; /* Image | Text | Price */
+    align-items: start; /* Align content to the top */
+    gap: 15px; /* Space between columns */
+    margin-bottom: 20px; /* Space between menu items */
+    border-bottom: 1px solid #e0e0e0; /* Divider between items */
+    padding-bottom: 15px; /* Add padding above divider */
+}
+
+.section ul li:last-child {
+    border-bottom: none; /* Remove divider for the last item */
+}
+
+/* Image Styling */
+.section img {
+    width: 120px; /* Compact image size */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    align-self: start; /* Align the image with the top of the grid */
+}
+
+/* Image Hover Effect */
+.section img:hover {
+    transform: scale(1.05); /* Slight zoom on hover */
+    transition: all 0.3s ease; /* Smooth animation */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+}
+
+/* Text Block Styling */
+.section ul li div {
+    display: flex; /* Flex layout for text alignment */
+    flex-direction: column; /* Stack title and description vertically */
+    justify-content: flex-start; /* Align text to the top */
+    gap: 5px; /* Space between title and description */
+    margin-left: 10px; /* Add spacing between image and text block */
+}
+
+/* Title Styling */
+.section ul li strong {
+    font-size: 18px; /* Slightly larger for emphasis */
+    font-weight: bold;
+    color: #2c3e50; /* Darker color for visibility */
+    margin: 0; /* Reset margins */
+    text-indent: 0; /* Remove unnecessary indentation */
+}
+
+/* Description Styling with Flow */
+.section ul li p {
+    font-size: 14px; /* Standard text size */
+    line-height: 1.6; /* Improve readability */
+    color: #7f8c8d; /* Subtle color for descriptions */
+    margin: 0; /* Reset margins */
+    text-indent: 0; /* Ensure alignment with the title */
+    text-align: left; /* Keep alignment for readability */
+}
+
+/* Price Styling */
+.price {
+    font-size: 16px; /* Slightly larger text for visibility */
+    font-weight: bold;
+    color: #1abc9c; /* Accent color for price */
+    white-space: nowrap; /* Prevent wrapping */
+    align-self: start; /* Align the price to the top of the text */
+    margin-left: 10px; /* Add spacing from the text */
+    margin-top: 0; /* Ensure price aligns perfectly with the text block */
+}
