@@ -93,10 +93,12 @@ html, body {
     transition: background-color 0.3s ease;
 }
 
+/* Chanage the colour of the menu items on mouse hover */
 .sidebar a:hover {
     background-color: #34495e;
 }
 
+/* Change the colour of the menu for the active page */
 .sidebar a.active {
     background-color: #1abc9c;
 }
@@ -171,7 +173,7 @@ html, body {
     text-align: center; /* Center align the heading */
   }
 
-/* For screens with a minimum width of 900px */
+/* For screens with a minimum width of 1200px */
   @media (max-width: 1200px) {
     .image-container {
       display: flex;
