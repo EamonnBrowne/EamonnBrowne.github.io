@@ -87,7 +87,7 @@ function validateForm() { //validation upon pressing submit
 	}
 	else if(!namePattern.test(formFirstName)){
 		//check that it conforms to name pattern
-		firstNameMessage.textContent="You first name must contain only letters";
+		firstNameMessage.textContent="Your first name must contain only letters";
 	  
 	}
 	else{
