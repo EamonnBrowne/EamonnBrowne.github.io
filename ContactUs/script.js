@@ -82,12 +82,12 @@ function validateForm() { //validation upon pressing submit
 	//string patterns for names and email respectively, const means can't be reassigned a value within this function 	
 	if(formFirstName == "") {
 		//if input empty send error message
-		firstNameMessage.textContent="Your must enter your first name";
+		firstNameMessage.textContent="You must enter your first name";
     
 	}
 	else if(!namePattern.test(formFirstName)){
 		//check that it conforms to name pattern
-		firstNameMessage.textContent="Your first name must contain only letters";
+		firstNameMessage.textContent="You first name must contain only letters";
 	  
 	}
 	else{
@@ -127,7 +127,7 @@ function validateForm() { //validation upon pressing submit
 	}	
 	if(formSelect == "") {
         //if user has not selected a topic send message
-		selectMessage.textContent="Your must select a topic";
+		selectMessage.textContent="You must select a topic";
     
 	}
 	else{

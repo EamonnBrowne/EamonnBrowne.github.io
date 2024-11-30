@@ -189,19 +189,19 @@ html, body {
   }
 
 
-/*Michael Toomey's appened style sheet*/
+/*Michael Toomey's appended style sheet*/
 
-
-.input {/*Single line input*/
-	font-size:10px;
+.input {
+	font-size:20px;
 	outline: none;
     border: none;    
-    outline: none;
     border-bottom: 1px solid black;
-    font-size:20px; 
+	font-family: "Crimson Text", serif;
+    font-weight: 500;
+    font-style: normal;
 }
-.input:hover{/*double size of line on input*/
-	 border-bottom: 4px solid black;	
+.input:hover{
+	 border-bottom: 1px solid red;	
 }
 * {
 	box-sizing: border-box;/*includes border and padding in calculation*/
@@ -210,17 +210,18 @@ html, body {
 .correction{ /*Styles error messages in warning red and italic to standout */
 	font-style: italic;
 	color:red;
+	font-family: "Crimson Text", serif;
+    font-weight: 400;
+    
 }
-
-.responsiveDesign { /* adapts the size of the logo header for different screen sizes */
-   /*Fill the screen width*/
+/*
+.responsiveDesign { /
 	height: auto;
 	position: relative;
 	width: 85%;
-	top: 0;
-  
+	top: 0; 
 }
-
+*/
 .flex-container-1{  /*picture flex*/
 	display: flex;  /*enables flex*/
 	flex-direction: row; /*flexbox row */
@@ -231,44 +232,55 @@ html, body {
 }
 
 .container-box-1 img {
+
 	object-fit: cover;
-	height: 80%; /*fill the space height wise*/
-	width: 80%; /*fill the space length wise*/
-	border-radius: 80%;
+	height: 100%; /*fill the space height wise*/
+	width: 100%; /*fill the space length wise*/
+	/*border-radius: 80%;*/
+	/*border:2px solid black;*/
 }
 
 .container-box-1{
     flex-basis:50%; /*Take up 50% of container space*/
 	background-color:white;   
 	text-align:center;	/*centre the text*/
-
 }
+
 
 input[type=text],input[type=email], select, textarea {
 	width: 400px; /*Make input areas all the same size*/
 	margin:10px;/*creates space*/
 	
-}	 
-.button { /*circular button*/
-		border-radius: 10px;
+}
+
+
+	 
+.button {
+	/*border-radius: 10px;*/
+	font-family: "Crimson Text", serif;
+    font-weight: 800;
+    font-style: normal;
 } 
-.button:hover {/*turn green on hover*/
-  background-color: lightgreen;
-  border-color: green;
-  color: white;
+.button:hover {
+	background-color: #34495e;
+	color:white;
+  
 } 	 
 
 .myform{	 	 /*Gives a margin of 30px around the form*/
-	margin:30px;
+	/*margin:30px;*/
+	border:2px solid black;	
+	padding:30px;
+	height:99%; /*fill the space height wise*/
+	width: 99%; 
+	
+	font-family: "Crimson Text", serif;
+    font-weight: 500;
+    font-style: normal;
 }
- 
-/* Clear floats after the columns */
-.row::after {
-	display: table;
-	clear: both;
-	content: ""; 
-}
-@media (max-width: 900px) { /*Responsive design, flex becomes column below 850px*/
+
+
+@media (max-width: 850px) { /*Responsive design, flex becomes column below 850px*/
 	.flex-container-1,.container-box-1  {
 	flex-direction: column;  
 	text-align:center; /*left align text when below 850px*/
@@ -276,6 +288,11 @@ input[type=text],input[type=email], select, textarea {
 	
 	}
   }
-
-
+  
+/* Clear floats after the columns */
+.row::after {
+	display: table;
+	clear: both;
+	content: ""; 
+}
 
