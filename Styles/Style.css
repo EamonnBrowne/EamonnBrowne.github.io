@@ -50,13 +50,15 @@ html, body {
 
 /* Sidebar styles */
 .sidebar {
-    width: 200px;
+    width: 15%; /*changed by MT, was 200px; */
     background-color: white;
     padding-top: 20px;
     position: fixed;
     height: 100%;
     top: 0;
     left: 0;
+	display: flex; /*Added by MT*/
+	flex-direction: column; /*Added by MT*/
 }
 
 /* Logo at the top of the sidebar */
@@ -185,4 +187,95 @@ html, body {
         flex-direction: column;
       }
   }
+
+
+/*Michael Toomey's appened style sheet*/
+
+
+.input {/*Single line input*/
+	font-size:10px;
+	outline: none;
+    border: none;    
+    outline: none;
+    border-bottom: 1px solid black;
+    font-size:20px; 
+}
+.input:hover{/*double size of line on input*/
+	 border-bottom: 4px solid black;	
+}
+* {
+	box-sizing: border-box;/*includes border and padding in calculation*/
+}
+
+.correction{ /*Styles error messages in warning red and italic to standout */
+	font-style: italic;
+	color:red;
+}
+
+.responsiveDesign { /* adapts the size of the logo header for different screen sizes */
+   /*Fill the screen width*/
+	height: auto;
+	position: relative;
+	width: 85%;
+	top: 0;
+  
+}
+
+.flex-container-1{  /*picture flex*/
+	display: flex;  /*enables flex*/
+	flex-direction: row; /*flexbox row */
+	justify-content: center; /*Places child elements in the centre*/
+	position: absolute;
+	width: 85%;
+	right:0;
+}
+
+.container-box-1 img {
+	object-fit: cover;
+	height: 80%; /*fill the space height wise*/
+	width: 80%; /*fill the space length wise*/
+	border-radius: 80%;
+}
+
+.container-box-1{
+    flex-basis:50%; /*Take up 50% of container space*/
+	background-color:white;   
+	text-align:center;	/*centre the text*/
+
+}
+
+input[type=text],input[type=email], select, textarea {
+	width: 400px; /*Make input areas all the same size*/
+	margin:10px;/*creates space*/
+	
+}	 
+.button { /*circular button*/
+		border-radius: 10px;
+} 
+.button:hover {/*turn green on hover*/
+  background-color: lightgreen;
+  border-color: green;
+  color: white;
+} 	 
+
+.myform{	 	 /*Gives a margin of 30px around the form*/
+	margin:30px;
+}
+ 
+/* Clear floats after the columns */
+.row::after {
+	display: table;
+	clear: both;
+	content: ""; 
+}
+@media (max-width: 900px) { /*Responsive design, flex becomes column below 850px*/
+	.flex-container-1,.container-box-1  {
+	flex-direction: column;  
+	text-align:center; /*left align text when below 850px*/
+	justify-content:center; /*Places child elements in the centre*/
+	
+	}
+  }
+
+
 

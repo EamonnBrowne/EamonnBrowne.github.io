@@ -15,8 +15,7 @@
 <body>
 
     <!-- Sidebar -->
-    <div class="sidebar">
-        <h1>Bran agus Sceólang</h1>
+    <div class="sidebar">      
         <div class="logo">
             <img src="../images/Logo.png" alt="Logo" />
         </div>
@@ -25,32 +24,56 @@
         <a href="../Menu/Menu.html">Menu</a> <!--Andrew-->
         <a href="../about/About.html">About Us</a> <!--Eamonn-->
         <a href="" class="active">Contact Us</a><!--Michael-->
+	</div>
+	<div class="flex-container-1"> <!--Holds contact form-->
+		<div class="container-box-1"><!--container within flex-->
+			<div>
+				<img src="../images/GetInTouch.png" alt="Two wolfhounds drinking coffee outside">
+			</div>
+		</div>
+		<div class="container-box-1"><!--container within flex-->
+			<div class="myform"><!--Contact Form-->			
+				<form name="myForm" action="/action_page.php" onsubmit="return 	validateForm()" method="post"> <!--Validate on submit-->
+					<label for="first_name">First Name:</label><br>
+					<input type="text" id="first_name" name="first_name" class="input" placeholder="Enter Your First Name"><br>
+					 <!--Input for first name-->
+					<span id="firstNameMessage" class="correction"></span><br><!--If empty or does not match string pattern error message-->
+					<label for="surname">Surname:</label><br>
+					<input type="text" id="surname" class="input" name="surname" placeholder="Enter your Surname"><br>
+					<!--Input for first name-->
+					<span id="surnameMessage" class="correction"></span><br>
+					<!--If empty or does not match string pattern error message-->
+					<label for="email">Email:</label><br>
+					<input type="email" id="email" class="input" placeholder="Enter your email"><br><!--Email input-->
+					<span id="emailMessage" class="correction"></span><br>
+					<!--If empty or does not match string pattern error message-->
+					<label for="selectTopic">Topic:</label><br>
+					<select id="selectTopic" name="selectTopic" class="input"><!--Select Topic-->
+						<option value=""placeholder="Select Topic">Select Topic</option>
+						<option value="wrongorder">Wrong Order</option>
+						<option value="Enquire">Equire About Products</option>
+						<option value="corporateEvents">Corporate Events</option>
+						<option value="feedback">Feedback</option>
+					</select><br> 
+					<!--Default "Select Topic" has an empty value which tests if the user has selected an option-->
+					<span id="selectMessage" class="correction"></span><br>
+					<!--If user does not select an option error message-->
+					<label for="textArea">Message:</label><br>
+					<textarea id="textArea" name="textArea" class="input" placeholder="Enter your message"></textarea><br>
+					<!--The textarea-->
+					<span id="textAreaMessage" class="correction"></span><br><br>
+					<!--If empty onclick show error message-->
+					<button type="button" class="button" onclick="validateForm()">Submit</button>
+					<!--The submit button, activates second form of validation-->
+				</form>
+			</div>
+		</div>
+		
+	</div>
+	
 
-
-    </div>
-
-    <!-- Main Content -->
-    <div class="main-content">
-        <div class="header">
-            <h1>Bran agus Sceólang</h1>
-        </div>
-
-        <div class="section">
-            <h2>Welcome to the Website</h2>
-            <p>This is the main content area. You can add more sections here based on the website’s needs.</p>
-        </div>
-
-        <div class="section">
-            <h2>About</h2>
-            <p>This section can be about your website, company, or services. Customize as per your requirements.</p>
-        </div>
-
-        <div class="section">
-            <h2>Services</h2>
-            <p>List the services you offer, explaining each in detail.</p>
-        </div>
-
-    </div>
+	<script src="script.js"></script><!--Links to the external javascript file-->
+    
 
 </body>
 </html>
