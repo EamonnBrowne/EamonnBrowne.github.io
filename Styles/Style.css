@@ -223,27 +223,30 @@ html, body {
 }
 */
 .flex-container-1{  /*picture flex*/
+	
 	display: flex;  /*enables flex*/
 	flex-direction: row; /*flexbox row */
 	justify-content: center; /*Places child elements in the centre*/
 	position: absolute;
 	width: 85%;
 	right:0;
+	border:5px solid black;
+	padding-top:10px;
+	padding-bottom:10px;
+	
 }
 
 .container-box-1 img {
-
 	object-fit: cover;
 	height: 100%; /*fill the space height wise*/
 	width: 100%; /*fill the space length wise*/
-	/*border-radius: 80%;*/
-	/*border:2px solid black;*/
 }
 
 .container-box-1{
     flex-basis:50%; /*Take up 50% of container space*/
 	background-color:white;   
 	text-align:center;	/*centre the text*/
+	
 }
 
 
@@ -252,11 +255,8 @@ input[type=text],input[type=email], select, textarea {
 	margin:10px;/*creates space*/
 	
 }
-
-
-	 
+ 
 .button {
-	/*border-radius: 10px;*/
 	font-family: "Crimson Text", serif;
     font-weight: 800;
     font-style: normal;
@@ -264,21 +264,16 @@ input[type=text],input[type=email], select, textarea {
 .button:hover {
 	background-color: #34495e;
 	color:white;
-  
 } 	 
 
 .myform{	 	 /*Gives a margin of 30px around the form*/
-	/*margin:30px;*/
-	border:2px solid black;	
-	padding:30px;
-	height:99%; /*fill the space height wise*/
-	width: 99%; 
-	
+	/*padding:30px;*/
+	height:100%; /*fill the space height wise*/
+	width: 100%; 
 	font-family: "Crimson Text", serif;
     font-weight: 500;
     font-style: normal;
 }
-
 
 @media (max-width: 850px) { /*Responsive design, flex becomes column below 850px*/
 	.flex-container-1,.container-box-1  {
