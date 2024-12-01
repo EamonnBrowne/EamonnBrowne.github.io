@@ -230,7 +230,7 @@ html, body {
 	position: absolute;
 	width: 85%;
 	right:0;
-	border:5px solid black;
+	/*border:5px solid black*/;
 	padding-top:10px;
 	padding-bottom:10px;
 	
