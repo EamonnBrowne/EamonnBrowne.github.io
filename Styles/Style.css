@@ -124,7 +124,6 @@ html, body {
     overflow: visible; /* Allow content to flow */
 }
 
-
 .Section{
     background-color: white; /* Subtle light gray */
     padding: 20px;
@@ -223,17 +222,16 @@ html, body {
 }
 */
 .flex-container-1{  /*picture flex*/
-	
 	display: flex;  /*enables flex*/
 	flex-direction: row; /*flexbox row */
 	justify-content: center; /*Places child elements in the centre*/
 	position: absolute;
 	width: 85%;
 	right:0;
-	/*border:5px solid black*/;
-	padding-top:10px;
+	padding-top:20px;
 	padding-bottom:10px;
-	
+	border:2px solid black;
+		
 }
 
 .container-box-1 img {
@@ -251,7 +249,7 @@ html, body {
 
 
 input[type=text],input[type=email], select, textarea {
-	width: 400px; /*Make input areas all the same size*/
+	width: 350px; /*Make input areas all the same size*/
 	margin:10px;/*creates space*/
 	
 }
@@ -262,16 +260,15 @@ input[type=text],input[type=email], select, textarea {
     font-style: normal;
 } 
 .button:hover {
-	background-color: #34495e;
+	background-color: #1abc9c;
 	color:white;
 } 	 
 
-.myform{	 	 /*Gives a margin of 30px around the form*/
-	/*padding:30px;*/
+.myform{	 	 
 	height:100%; /*fill the space height wise*/
 	width: 100%; 
 	font-family: "Crimson Text", serif;
-    font-weight: 500;
+    font-weight: 400;
     font-style: normal;
 }
 
