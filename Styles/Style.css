@@ -213,14 +213,7 @@ html, body {
     font-weight: 400;
     
 }
-/*
-.responsiveDesign { /
-	height: auto;
-	position: relative;
-	width: 85%;
-	top: 0; 
-}
-*/
+
 .flex-container-1{  /*picture flex*/
 	display: flex;  /*enables flex*/
 	flex-direction: row; /*flexbox row */
@@ -229,8 +222,7 @@ html, body {
 	width: 85%;
 	right:0;
 	padding-top:20px;
-	padding-bottom:10px;
-	border:2px solid black;
+	
 		
 }
 
@@ -238,6 +230,9 @@ html, body {
 	object-fit: cover;
 	height: 100%; /*fill the space height wise*/
 	width: 100%; /*fill the space length wise*/
+	margin-left:70px; /*bring image closer to form for balance*/
+	
+
 }
 
 .container-box-1{
@@ -258,6 +253,8 @@ input[type=text],input[type=email], select, textarea {
 	font-family: "Crimson Text", serif;
     font-weight: 800;
     font-style: normal;
+	border-radius:10px;
+	border:0;
 } 
 .button:hover {
 	background-color: #1abc9c;
@@ -270,16 +267,24 @@ input[type=text],input[type=email], select, textarea {
 	font-family: "Crimson Text", serif;
     font-weight: 400;
     font-style: normal;
+	padding-top:10px;
+	
 }
 
 @media (max-width: 850px) { /*Responsive design, flex becomes column below 850px*/
 	.flex-container-1,.container-box-1  {
-	flex-direction: column;  
-	text-align:center; /*left align text when below 850px*/
-	justify-content:center; /*Places child elements in the centre*/
+		flex-direction: column;  
+		text-align:center; /*left align text when below 850px*/
+		justify-content:center; /*Places child elements in the centre*/
 	
 	}
-  }
+	
+	
+	.container-box-1 img {		
+		margin-left:0; /*recentre the image for responsive*/
+
+	}
+}
   
 /* Clear floats after the columns */
 .row::after {
