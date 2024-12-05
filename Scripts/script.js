@@ -93,7 +93,8 @@ function validateForm() { //validation upon pressing submit
 	else{
 		//if okay clear comment
 		firstNameMessage.textContent=""; 
-			
+		
+	
 	}		
 	if (formSurname == "") {
 		//if input empty send error message
@@ -144,4 +145,8 @@ function validateForm() { //validation upon pressing submit
 		textAreaMessage.textContent="";
 		
 	}
+	if(formFirstName != "" && namePattern.test(formFirstName) && formSurname != "" && namePattern.test(formSurname) && formEmail != "" && emailPattern.test(formEmail) && formSelect != "" && formTextArea!=""){
+		document.getElementById("myForm").reset();
+		alert("Information was successfully submitted");
+	} //If all information is correct, inform the user and reset the form
 }
