@@ -27,7 +27,8 @@
     border-radius: 10px; /* Rounded corners for sections */
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
     margin-bottom: 30px; /* Add spacing between sections */
-    margin-left: 22%; /* Space for the sidebar */
+    margin-left: 15%; /* Space for the sidebar */
+    margin-right: 5%; /* Space so the price does not run off the screen */
 }
 
 /* Headings Styling */
@@ -47,7 +48,6 @@
     display: grid; /* Use grid for better alignment */
     grid-template-columns: auto 1fr auto; /* Image | Text | Price */
     align-items: start; /* Align content to the top */
-    gap: 15px; /* Space between columns */
     margin-bottom: 20px; /* Space between menu items */
     border-bottom: 1px solid #e0e0e0; /* Divider between items */
     padding-bottom: 15px; /* Add padding above divider */
@@ -115,5 +115,8 @@
 @media (max-width: 600px) { /*Responsive design, flex becomes column below 600px*/
     .menu{
       margin-left:23%;
+    }
+    .menu img {
+        width: 60px; /* Compact image size  on phone screens*/
     }
   }
