@@ -1,41 +1,3 @@
-/* Crimson Text: CSS classes take from Google fonts*/
-.crimson-text-regular {
-    font-family: "Crimson Text", serif;
-    font-weight: 400;
-    font-style: normal;
-  }
-  
-  .crimson-text-semibold {
-    font-family: "Crimson Text", serif;
-    font-weight: 600;
-    font-style: normal;
-  }
-  
-  .crimson-text-bold {
-    font-family: "Crimson Text", serif;
-    font-weight: 700;
-    font-style: normal;
-  }
-  
-  .crimson-text-regular-italic {
-    font-family: "Crimson Text", serif;
-    font-weight: 400;
-    font-style: italic;
-  }
-  
-  .crimson-text-semibold-italic {
-    font-family: "Crimson Text", serif;
-    font-weight: 600;
-    font-style: italic;
-  }
-  
-  .crimson-text-bold-italic {
-    font-family: "Crimson Text", serif;
-    font-weight: 700;
-    font-style: italic;
-  }
-  
-
 
 
 
@@ -50,60 +12,127 @@ html, body {
 
 /* Sidebar styles */
 .sidebar {
-    width: 15%; /*changed by MT, was 200px; */
+    width: 10%; /*changed by MT, was 200px; */
     background-color: white;
     padding-top: 20px;
     position: fixed;
     height: 100%;
     top: 0;
-    left: 0;
-	display: flex; /*Added by MT*/
-	flex-direction: column; /*Added by MT*/
+    left: 10px;
+    display: flex;
+    align-items: center;     /* centers items vertically */
+    flex-direction: column;
+
+    
+    
 }
+
+.sidebar a {
+  display: block;
+  color: black;
+  padding: 15px 20px;
+  text-decoration: none;
+  font-size: 18px;
+  text-align: center;
+  border: none;
+  border-radius: 5px;
+  /*border-bottom: 1px solid #34495e;*/
+  transition: background-color 0.3s ease;
+}
+
+.sidebar button {
+  padding: 10px 20px;
+	background: white;
+	color: black;
+	border: none;
+	border-radius: 5px;
+	font-size: 16px;
+	cursor: pointer;
+	transition: background-color 0.3s ease;
+  height: 50px;
+
+}
+.sidebar button img{
+  max-height: 100%; /* sets image height to fit button height */
+  object-fit: cover; /* ensures the image is fully visible within the button */
+}
+
+/* Chanage the colour of the menu items on mouse hover */
+.sidebar a:hover {
+  background-color: #34495e;
+}
+
+/* Chanage the colour of the menu items on mouse hover */
+.sidebar button:hover {
+  background: #34495e;
+}
+
+/* Change the colour of the menu for the active page */
+.sidebar a.active {
+  background-color: #1abc9c;
+}
+
+
+.iconbar{
+  width: 10%; /*changed by MT, was 200px; */
+  background-color: white;
+  padding-top: 20px;
+  position: fixed;
+  height: 100%;
+  top: 0;
+  left: 10px;
+  display: none;
+  align-items: center;     /* centers items vertically */
+  flex-direction: column;
+
+}
+
+.iconbar button {
+  padding: 10px 20px;
+	background: white;
+	color: black;
+	border: none;
+	border-radius: 5px;
+	font-size: 16px;
+	cursor: pointer;
+	transition: background-color 0.3s ease;
+  height: 50px;
+
+}
+
+
+
+/* Chanage the colour of the menu items on mouse hover */
+.iconbar button:hover {
+  background: #34495e;
+}
+
+/* Change the colour of the menu for the active page */
+.inconbar button.active1 {
+  background: #1abc9c;
+}
+
+
+.iconbar button img{
+  max-height: 100%; /* sets image height to fit button height */
+  object-fit: cover; /* ensures the image is fully visible within the button */
+}
+
 
 /* Logo at the top of the sidebar */
 .logo {
     text-align: center;
     padding-bottom: 20px;
+   
 }
 
 .logo img {
-    width: 80%; /* Adjust logo size */
+    /* width: 80%;   Adjust logo size */
     height: auto;
-    max-width: 150px; /* Limit logo width */
+    max-width: 100%;
+    padding-left: 5px;
 }
 
-.sidebar h1 {
-    display: block;
-    color: black;
-    padding: 15px 20px;
-    text-decoration: none;
-    text-align: center;
-    font-size: 18px;
-    /* border-bottom: 1px solid #34495e;*/
-    transition: background-color 0.3s ease;
-}
-
-.sidebar a {
-    display: block;
-    color: black;
-    padding: 15px 20px;
-    text-decoration: none;
-    font-size: 18px;
-    text-align: center;
-    /*border-bottom: 1px solid #34495e;*/
-    transition: background-color 0.3s ease;
-}
-
-/* Chanage the colour of the menu items on mouse hover */
-.sidebar a:hover {
-    background-color: #34495e;
-}
-
-/* Change the colour of the menu for the active page */
-.sidebar a.active {
-    background-color: #1abc9c;
-}
 
 /* Main content area */
 
@@ -116,7 +145,7 @@ html, body {
 }
 
 .main-content {
-    margin-left: 16%; /* Space for the sidebar */
+    margin-left: 11%; /* Space for the sidebar */
     padding: 20px;
     background-color: white;
     min-height: 100%; /* Ensure it grows with the content */
@@ -252,7 +281,6 @@ input[type=text],input[type=email], select, textarea {
 	border-radius:10px;
 	border:0;
 } 
-
 .button:hover {
 	background-color: #1abc9c;
 	color:white;
@@ -268,24 +296,6 @@ input[type=text],input[type=email], select, textarea {
 	margin-right:70px;
 }
 
-@media (max-width: 850px) { /*Responsive design, flex becomes column below 850px*/
-	.flex-container-1,.container-box-1  {
-		flex-direction: column;  
-		text-align:center; /*left align text when below 850px*/
-		justify-content:center; /*Places child elements in the centre*/
-	
-	}
-	
-	
-	.container-box-1 img {		
-		margin-left:0; /*recentre the image for responsive*/
-
-	}
-	.myform{	 	 
-	
-	margin-right:0;
-	}
-}
   
 /* Clear floats after the columns */
 .row::after {
@@ -294,3 +304,33 @@ input[type=text],input[type=email], select, textarea {
 	content: ""; 
 }
 
+@media (max-width: 870px) { /*Responsive design, flex becomes column below 850px*/
+	.flex-container-1,.container-box-1  {
+		flex-direction: column;  
+		text-align:center; /*left align text when below 850px*/
+		justify-content:center; /*Places child elements in the centre*/
+	
+	}
+		
+	.container-box-1 img {		
+		margin-left:0; /*recentre the image for responsive*/
+
+	}
+	.myform{	 	 
+	
+	margin-right:0;
+	}
+  .sidebar{
+    display: none;
+  }
+  .iconbar{
+    display: flex;
+  }
+
+  }
+
+  @media (max-width: 600px) { /*Responsive design, flex becomes column below 600px*/
+    .section{
+      margin-left:22%;
+    }
+  }

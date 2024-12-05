@@ -15,68 +15,38 @@
 </head>
 <body>
 
-    <!-- Sidebar -->
-    <div class="sidebar">
-        <div class="logo">         
+    <!-- navigation -->
+   
+    
+    <div class="sidebar" id="sidebar">  
+        <div>    
+            <button class="navbutton" id="navbutton" ><img src="../images/icons/nav.png" alt="Home"></button>
+        </div>     
+        <div class="logo">
             <img src="../images/Logo.png" alt="Logo" />
         </div>
-
         <a href="../index.html">Home</a> <!-- Eamonn -->
-        <a href="#" class="active">Menu</a> <!-- Andrew -->
-        <a href="../about/About.html">About Us</a> <!-- Eamonn -->
-        <a href="../ContactUs/ContactUs.html">Contact Us</a> <!-- Michael -->
+        <a href="#" class="active">Menu</a>   <!-- Andrew-->
+        <a href="../about/About.html">About Us</a> <!--Eamonn-->
+        <a href="../ContactUs/ContactUs.html">Contact Us</a><!--Michael-->
     </div>
-
-    <!-- Main Content -->
-    <div class="main-content">
-        <div class="header">
-            <h1> <h1>Bran agus Sceólang - Our Menu</h1>
+    <div class="iconbar" id="iconbar" > 
+        <div>    
+            <button class="navbutton" id="navbutton2" ><img src="../images/icons/nav.png" alt="Home"></button>
         </div>
-
-        <!-- Breakfast menu -->
-        <div class="menu">
-            <h2>Breakfast</h2>
-            <ul>
-                <li>
-                    <img src="../images/pancake.png" alt="Pancakes">
-                    <div>
-                        <strong>American Pancakes</strong>
-                        <p>
-                            Fluffy stack of American-style pancakes<br>
-                            served with maple syrup and fresh berries.
-                        </p>
-                    </div>
-                    <span class="price">€5.99</span>
-                </li>
-                <li>
-                    <img src="../images/AvoToast.png" alt="Avocado Toast">
-                    <div>
-                        <strong>Avocado Toast</strong>
-                        <p>
-                            Toasted sourdough topped with<br>
-                            smashed avocado, chili flakes,<br>
-                            and olive oil.
-                        </p>
-                    </div>
-                    <span class="price">€7.50</span>
-                </li>
-                <li>
-                    <img src="../images/Full-Irish.png" alt="Full Irish Breakfast">
-                    <div>
-                        <strong>Full Irish Breakfast</strong>
-                        <p>
-                            A hearty plate with sausages, bacon,<br>
-                            eggs, black pudding, white pudding,<br>
-                            and baked beans.
-                        </p>
-                    </div>
-                    <span class="price">€9.99</span>
-                </li>
-            </ul>
+        <div class="logo">
+            <img src="../images/Logo.png" alt="Logo" />
         </div>
-
-        <!-- Lunch menu -->
-        <div class="menu">
+        <button class="buttons" href="../index.html"><img src="../images/icons/home.png" alt="Home"></button>
+        <button class="buttons active" style="background-color:#1abc9c"><img src="../images/icons/menu.png" alt="Menu"></button>
+        <button class="buttons" href="../about/About.html"><img src="../images/icons/info.png" alt="About Us"></button>
+        <button class="buttons" href="../ContactUs/ContactUs.html"><img src="../images/icons/contact.png" alt="Contact Us"></button>
+    </div>
+		
+		
+		
+		<!-- Lunch menu -->
+        <div class="menu" >
             <h2>Lunch</h2>
             <ul>
                 <li>
@@ -195,6 +165,6 @@
         </div>
 
     </div>
-
+    <script src="../Scripts/sidepanel.js"></script><!--Links to the external javascript file-->
 </body>
 </html>

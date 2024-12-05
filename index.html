@@ -1,21 +1,27 @@
-<!-- Templete for CA2 Developed by Eamonn Browne-->
+<!-- Template for CA2 Developed by Eamonn Browne-->
 
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Import font formm Google -->
+    <!-- Import font from Google -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap" rel="stylesheet">
     <title>Bran and Sceólang Cafe</title>
     <link rel="stylesheet" href="Styles/Style.css"> <!-- Link to the external CSS file -->
+    <link rel="stylesheet" href="../Styles/StyleMenu.css"> <!-- Link to the external CSS file -->
 </head>
 <body>
 
     <!-- navigation -->
-    <div class="sidebar">       
+   
+    
+    <div class="sidebar" id="sidebar">  
+        <div>    
+         <button class="navbutton" id="navbutton" ><img src="images/icons/nav.png" alt="Home"></button>
+        </div>     
         <div class="logo">
             <img src="images/Logo.png" alt="Logo" />
         </div>
@@ -24,14 +30,31 @@
         <a href="Menu/Menu.html">Menu</a>   <!-- Andrew-->
         <a href="about/About.html">About Us</a> <!--Eamonn-->
         <a href="ContactUs/ContactUs.html">Contact Us</a><!--Michael-->
-
+    </div>
+    <div class="iconbar" id="iconbar" > 
+        <div>    
+            <button class="navbutton" id="navbutton2" ><img src="images/icons/nav.png" alt="Home"></button>
+        </div>
+        
+        <div class="logo">
+            <img src="images/Logo.png" alt="Logo" />
+        </div>
+        <!-- <a class="iconactive" href="#" ><img src="images/icons/home.png" alt="Home"></a> 
+        <a href="Menu/Menu.html"><img src="images/icons/menu.png" alt="Menu"></a>   
+        <a href="about/About.html"><img src="images/icons/info.png" alt="About Us"></a>
+        <a href="ContactUs/ContactUs.html"><img src="images/icons/contact.png" alt="Contact Us"></a> -->
+        <button class="buttons active" style="background-color:#1abc9c"><img src="images/icons/home.png" alt="Home"></button>
+        <button class="buttons" href="Menu/Menu.html"><img src="images/icons/menu.png" alt="Menu"></button>
+        <button class="buttons" href="about/About.html"><img src="images/icons/info.png" alt="About Us"></button>
+        <button class="buttons" href="ContactUs/ContactUs.html"><img src="images/icons/contact.png" alt="Contact Us"></button>
     </div>
 
     <!-- Main Content -->
-    <div class="main-content">
-
-
-        <div class="Section">
+    
+    <div class="main-content" id="main-content">
+       
+            <div class="Section">
+            
             <h2>Welcome to Bran agus Sceólang</h2>
             <p> Are you a dog lover? Are you tired of missing out on activities because you dodn't have a place to bring your furry friends</p>
             <p> We have a soulution for a you dog freienly cafe in the heart of Dublin</p>
@@ -40,11 +63,11 @@
         </div>
 
         <div class="Section image-container">
-            <img src="images/FrontDoor.png" alt="Front door with Dog" />
+            <img src="images/WolfHound.png" alt="Front door with Dog" />
             <img src="images/CustomersAndDogs.png" alt="Front door with Dog" />
         </div>
 
     </div>
-
+    <script src="Scripts/sidepanel.js"></script><!--Links to the external javascript file-->
 </body>
 </html>

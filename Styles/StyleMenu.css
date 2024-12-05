@@ -4,14 +4,6 @@
     margin-top: 20px;
 }
 
-.menu ul li {
-    display: flex; /* Align image and text side by side */
-    flex-wrap: wrap; /* Allow wrapping if the content overflows */
-    align-items: flex-start; /* Align items to the top */
-    gap: 20px; /* Add space between image and text */
-    margin-bottom: 30px; /* Add space between list items */
-}
-
 
 .menu img {
     flex-shrink: 0; /* Prevent image from resizing with text */
@@ -35,6 +27,7 @@
     border-radius: 10px; /* Rounded corners for sections */
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
     margin-bottom: 30px; /* Add spacing between sections */
+    margin-left: 22%; /* Space for the sidebar */
 }
 
 /* Headings Styling */
@@ -119,3 +112,8 @@
     margin-top: 0; /* Ensure price aligns perfectly with the text block */
 }
 
+@media (max-width: 600px) { /*Responsive design, flex becomes column below 600px*/
+    .menu{
+      margin-left:23%;
+    }
+  }
