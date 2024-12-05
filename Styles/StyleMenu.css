@@ -1,27 +1,6 @@
-
-
+/* General Menu Styling */
 .menu {
     margin-top: 20px;
-}
-
-
-.menu img {
-    flex-shrink: 0; /* Prevent image from resizing with text */
-}
-
-.menu ul li strong, 
-.menu ul li p {
-    margin-left: 10px; /* Add spacing between the text and image */
-}
-
-
-.menu p {
-    color: #7f8c8d;
-}
-
-/* Menu Section Styling - Andy */
-
-.menu {
     background-color: #f8f9fa; /* Subtle light gray */
     padding: 5px;
     border-radius: 10px; /* Rounded corners for sections */
@@ -30,7 +9,7 @@
     margin-left: 22%; /* Space for the sidebar */
 }
 
-/* Headings Styling */
+/* Menu Headings Styling */
 .menu h2 {
     font-size: 28px; /* Slightly larger for emphasis */
     font-weight: bold;
@@ -42,7 +21,7 @@
     text-align: center; /* Center align the heading */
 }
 
-/* Align Items Using Grid for Better Flow */
+/* Menu List Styling */
 .menu ul li {
     display: grid; /* Use grid for better alignment */
     grid-template-columns: auto 1fr auto; /* Image | Text | Price */
@@ -66,7 +45,6 @@
     align-self: start; /* Align the image with the top of the grid */
 }
 
-/* Image Hover Effect */
 .menu img:hover {
     transform: scale(1.05); /* Slight zoom on hover */
     transition: all 0.3s ease; /* Smooth animation */
@@ -91,13 +69,12 @@
     text-indent: 0; /* Remove unnecessary indentation */
 }
 
-/* Description Styling with Flow */
+/* Description Styling */
 .menu ul li p {
     font-size: 14px; /* Standard text size */
     line-height: 1.6; /* Improve readability */
     color: #7f8c8d; /* Subtle color for descriptions */
     margin: 0; /* Reset margins */
-    text-indent: 0; /* Ensure alignment with the title */
     text-align: left; /* Keep alignment for readability */
 }
 
@@ -112,8 +89,9 @@
     margin-top: 0; /* Ensure price aligns perfectly with the text block */
 }
 
-@media (max-width: 600px) { /*Responsive design, flex becomes column below 600px*/
-    .menu{
-      margin-left:23%;
+/* Responsive Design */
+@media (max-width: 600px) {
+    .menu {
+        margin-left: 23%; /* Adjust margin for smaller screens */
     }
-  }
+}
