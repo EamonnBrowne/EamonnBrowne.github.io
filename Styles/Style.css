@@ -223,13 +223,13 @@ html, body {
 	font-size:20px;
 	outline: none;
     border: none;    
-    border-bottom: 1px solid #808080;
+    border-bottom: 1px solid black;
 	font-family: "Crimson Text", serif;
     font-weight: 500;
     font-style: normal;
 }
 .input:hover{
-	 border-bottom: 2px solid #080808;	
+	 border-bottom: 1px solid red;	
 }
 * {
 	box-sizing: border-box;/*includes border and padding in calculation*/
@@ -250,7 +250,9 @@ html, body {
 	position: absolute;
 	width: 85%;
 	right:0;
-	padding-top:20px;		
+	padding-top:20px;
+	
+		
 }
 
 .container-box-1 img {
@@ -258,6 +260,8 @@ html, body {
 	height: 100%; /*fill the space height wise*/
 	width: 100%; /*fill the space length wise*/
 	margin-left:70px; /*bring image closer to form for balance*/
+	
+
 }
 
 .container-box-1{
@@ -269,7 +273,7 @@ html, body {
 
 
 input[type=text],input[type=email], select, textarea {
-	width: 370px; /*Make input areas all the same size*/
+	width: 350px; /*Make input areas all the same size*/
 	margin:10px;/*creates space*/
 	
 }
@@ -293,9 +297,23 @@ input[type=text],input[type=email], select, textarea {
     font-weight: 400;
     font-style: normal;
 	padding-top:10px;
-	margin-right:70px;
+	
 }
 
+@media (max-width: 850px) { /*Responsive design, flex becomes column below 850px*/
+	.flex-container-1,.container-box-1  {
+		flex-direction: column;  
+		text-align:center; /*left align text when below 850px*/
+		justify-content:center; /*Places child elements in the centre*/
+	
+	}
+	
+	
+	.container-box-1 img {		
+		margin-left:0; /*recentre the image for responsive*/
+
+	}
+}
   
 /* Clear floats after the columns */
 .row::after {
