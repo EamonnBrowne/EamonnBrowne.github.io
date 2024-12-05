@@ -108,7 +108,7 @@ html, body {
 }
 
 /* Change the colour of the menu for the active page */
-.inconbar button.active1 {
+.inconbar button.active {
   background: #1abc9c;
 }
 
