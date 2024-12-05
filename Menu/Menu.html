@@ -15,156 +15,153 @@
 </head>
 <body>
 
-    <!-- navigation -->
-   
-    
+    <!-- Navigation -->
     <div class="sidebar" id="sidebar">  
         <div>    
-            <button class="navbutton" id="navbutton" ><img src="../images/icons/nav.png" alt="Home"></button>
+            <button class="navbutton" id="navbutton"><img src="../images/icons/nav.png" alt="Navigation"></button>
         </div>     
         <div class="logo">
             <img src="../images/Logo.png" alt="Logo" />
         </div>
-        <a href="../index.html">Home</a> <!-- Eamonn -->
-        <a href="#" class="active">Menu</a>   <!-- Andrew-->
-        <a href="../about/About.html">About Us</a> <!--Eamonn-->
-        <a href="../ContactUs/ContactUs.html">Contact Us</a><!--Michael-->
+        <!-- Updated Links with IDs -->
+        <a href="#lunch">Lunch</a>
+        <a href="#drinks">Drinks</a>
+        <a href="#doggie-treats">Doggie Treats</a>
     </div>
-    <div class="iconbar" id="iconbar" > 
+
+    <!-- Icon Bar for Smaller Screens -->
+    <div class="iconbar" id="iconbar"> 
         <div>    
-            <button class="navbutton" id="navbutton2" ><img src="../images/icons/nav.png" alt="Home"></button>
+            <button class="navbutton" id="navbutton2"><img src="../images/icons/nav.png" alt="Navigation"></button>
         </div>
         <div class="logo">
             <img src="../images/Logo.png" alt="Logo" />
         </div>
-        <a href="../index.html" ><button class="buttons" ><img src="../images/icons/home.png" alt="Home"></button></a> 
-        <a href="#"><button class="buttons" style="background-color:#1abc9c"><img src="../images/icons/menu.png" alt="Menu"></button></a>   
+        <a href="../index.html"><button class="buttons"><img src="../images/icons/home.png" alt="Home"></button></a> 
+        <a href="#" style="background-color:#1abc9c"><button class="buttons"><img src="../images/icons/menu.png" alt="Menu"></button></a>   
         <a href="../about/About.html"><button class="buttons"><img src="../images/icons/info.png" alt="About Us"></button></a>
         <a href="../ContactUs/ContactUs.html"><button class="buttons"><img src="../images/icons/contact.png" alt="Contact Us"></button></a>
     </div>
-		
-		
-		
-		<!-- Lunch menu -->
-        <div class="menu" >
-            <h2>Lunch</h2>
-            <ul>
-                <li>
-                    <img src="../images/ChickenCeasar.png" alt="Chicken Caesar Salad">
-                        <div>
-                            <strong>Chicken Caesar Salad</strong>
-                            <p>
-                            Fresh romaine lettuce tossed with grilled chicken, croutons, and Caesar dressing.
-                            </p>
-                            
-                        </div>
-                        <span class="price">€10.50</span>  
-                </li>
-                <li>
-                    <img src="../images/GrilledCheese.png" alt="Grilled Cheese Sandwich">
-                    <div>
-                        <strong>Grilled Cheese Sandwich</strong>
-                        <p>
-                            Classic comfort food with melted cheddar on buttery toasted bread.
-                        </p> 
-                    </div>
-                    <span class="price">€6.99</span>
-                </li>
-                <li>
-                    <img src="../images/Soup.png" alt="Soup of the Day">
-                    <div>
-                        <strong>Soup of the Day</strong>
-                        <p>
-                            A daily selection of<br>
-                            homemade soup served<br>
-                            with crusty bread.
-                        </p>
-                    </div>
-                    <span class="price">€5.00</span>
-                </li>
-            </ul>
-        </div>
-
-        <!-- Drinks menu -->
-        <div class="menu">
-            <h2>Drinks</h2>
-            <ul>
-                <li>
-                    <img src="../images/Americano.png" alt="Americano">
-                    <div>
-                        <strong>Americano</strong>
-                        <p>
-                            A bold black coffee made<br>
-                            with premium espresso beans.
-                        </p>
-                    </div>
-                    <span class="price">€2.50</span>
-                </li>
-                <li>
-                    <img src="../images/Cappuccino.png" alt="Cappuccino">
-                    <div>
-                        <strong>Cappuccino</strong>
-                        <p>
-                            A rich espresso topped<br>
-                            with steamed milk<br>
-                            and frothy foam.
-                        </p>
-                    </div>
-                    <span class="price">€3.00</span>
-                </li>
-                <li>
-                    <img src="../images/OJ.png" alt="Orange Juice">
-                    <div>
-                        <strong>Fresh Orange Juice</strong>
-                        <p>
-                            Freshly squeezed orange juice for a refreshing start to your day.
-                        </p>
-                    </div>
-                    <span class="price">€3.50</span>
-                </li>
-            </ul>
-        </div>
-
-                <!-- Drinks menu -->
-        <div class="menu">
-            <h2>Doggie Treats</h2>
-            <ul>
-                <li>
-                    <img src="../images/Dogfood.png" alt="Americano">
-                    <div>
-                        <strong>Premium Dog food</strong>
-                        <p>
-                            A bowl of premuum dog food<br>
-                            for your furry friend.
-                        </p>
-                    </div>
-                    <span class="price">€4.50</span>
-                </li>
-                <li>
-                    <img src="../images/DogBiscuit.png" alt="Cappuccino">
-                    <div>
-                        <strong>Dog Biscuits</strong>
-                        <p>
-                            A Dog Biscuit<br>
-                            Your Dog will love<br>
-                        </p>
-                    </div>
-                    <span class="price">€3.00</span>
-                </li>
-                <li>
-                    <img src="../images/ChewToys.png" alt="Orange Juice">
-                    <div>
-                        <strong>Chew Toys</strong>
-                        <p>
-                            Chew Toys for your pooch
-                        </p>
-                    </div>
-                    <span class="price">€3.50</span>
-                </li>
-            </ul>
-        </div>
-
+        
+    <!-- Lunch Menu -->
+    <div id="lunch" class="menu">
+        <h2>Lunch</h2>
+        <ul>
+            <li>
+                <img src="../images/ChickenCeasar.png" alt="Chicken Caesar Salad">
+                <div>
+                    <strong>Chicken Caesar Salad</strong>
+                    <p>
+                        Fresh romaine lettuce tossed with grilled chicken, croutons, and Caesar dressing.
+                    </p>
+                </div>
+                <span class="price">€10.50</span>  
+            </li>
+            <li>
+                <img src="../images/GrilledCheese.png" alt="Grilled Cheese Sandwich">
+                <div>
+                    <strong>Grilled Cheese Sandwich</strong>
+                    <p>
+                        Classic comfort food with melted cheddar on buttery toasted bread.
+                    </p> 
+                </div>
+                <span class="price">€6.99</span>
+            </li>
+            <li>
+                <img src="../images/Soup.png" alt="Soup of the Day">
+                <div>
+                    <strong>Soup of the Day</strong>
+                    <p>
+                        A daily selection of<br>
+                        homemade soup served<br>
+                        with crusty bread.
+                    </p>
+                </div>
+                <span class="price">€5.00</span>
+            </li>
+        </ul>
     </div>
-    <script src="../Scripts/sidepanel.js"></script><!--Links to the external javascript file-->
+
+    <!-- Drinks Menu -->
+    <div id="drinks" class="menu">
+        <h2>Drinks</h2>
+        <ul>
+            <li>
+                <img src="../images/Americano.png" alt="Americano">
+                <div>
+                    <strong>Americano</strong>
+                    <p>
+                        A bold black coffee made<br>
+                        with premium espresso beans.
+                    </p>
+                </div>
+                <span class="price">€2.50</span>
+            </li>
+            <li>
+                <img src="../images/Cappuccino.png" alt="Cappuccino">
+                <div>
+                    <strong>Cappuccino</strong>
+                    <p>
+                        A rich espresso topped<br>
+                        with steamed milk<br>
+                        and frothy foam.
+                    </p>
+                </div>
+                <span class="price">€3.00</span>
+            </li>
+            <li>
+                <img src="../images/OJ.png" alt="Orange Juice">
+                <div>
+                    <strong>Fresh Orange Juice</strong>
+                    <p>
+                        Freshly squeezed orange juice for a refreshing start to your day.
+                    </p>
+                </div>
+                <span class="price">€3.50</span>
+            </li>
+        </ul>
+    </div>
+
+    <!-- Doggie Treats Menu -->
+    <div id="doggie-treats" class="menu">
+        <h2>Doggie Treats</h2>
+        <ul>
+            <li>
+                <img src="../images/Dogfood.png" alt="Premium Dog Food">
+                <div>
+                    <strong>Premium Dog Food</strong>
+                    <p>
+                        A bowl of premium dog food<br>
+                        for your furry friend.
+                    </p>
+                </div>
+                <span class="price">€4.50</span>
+            </li>
+            <li>
+                <img src="../images/DogBiscuit.png" alt="Dog Biscuits">
+                <div>
+                    <strong>Dog Biscuits</strong>
+                    <p>
+                        A Dog Biscuit<br>
+                        your dog will love.
+                    </p>
+                </div>
+                <span class="price">€3.00</span>
+            </li>
+            <li>
+                <img src="../images/ChewToys.png" alt="Chew Toys">
+                <div>
+                    <strong>Chew Toys</strong>
+                    <p>
+                        Chew Toys for your pooch.
+                    </p>
+                </div>
+                <span class="price">€3.50</span>
+            </li>
+        </ul>
+    </div>
+
+    <!-- External Scripts -->
+    <script src="../Scripts/sidepanel.js"></script> <!-- Links to the external JavaScript file -->
 </body>
 </html>
