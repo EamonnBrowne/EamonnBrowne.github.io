@@ -1,5 +1,3 @@
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -16,35 +14,52 @@
 <body>
 
     <!-- Navigation -->
-    <div class="sidebar" id="sidebar">  
-        <div>    
-            <button class="navbutton" id="navbutton"><img src="../images/icons/nav.webp" alt="Navigation"></button>
-        </div>     
+    <div class="sidebar">  
+        <h1>Bran and Sceólang</h1>
         <div class="logo">
             <img src="../images/Logo.webp" alt="Logo" />
         </div>
-        <!-- Updated Links with IDs -->
-        <a href="#lunch">Lunch</a>
-        <a href="#drinks">Drinks</a>
-        <a href="#doggie-treats">Doggie Treats</a>
+        <a href="../index.html">Home</a>
+        <a href="#" class="active">Menu</a>
+        <a href="../about/About.html">About Us</a>
+        <a href="../ContactUs/ContactUs.html">Contact Us</a>
     </div>
 
-    <!-- Icon Bar for Smaller Screens -->
-    <div class="iconbar" id="iconbar"> 
-        <div>    
-            <button class="navbutton" id="navbutton2"><img src="../images/icons/nav.webp" alt="Navigation"></button>
+    <!-- Featured Items Carousel -->
+    <div class="carousel">
+        <h2>Featured Items</h2>
+        <div class="carousel-track">
+            <div class="carousel-item">
+                <img src="../images/ChickenCeasar.webp" alt="Chicken Caesar Salad">
+                <div>
+                    <strong>Chicken Caesar Salad</strong>
+                    <p>Romaine lettuce with grilled chicken, croutons, and Caesar dressing.</p>
+                    <span class="price">€10.50</span>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="../images/Cappuccino.webp" alt="Cappuccino">
+                <div>
+                    <strong>Cappuccino</strong>
+                    <p>A rich espresso topped with steamed milk and frothy foam.</p>
+                    <span class="price">€3.00</span>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="../images/DogBiscuit.webp" alt="Dog Biscuits">
+                <div>
+                    <strong>Dog Biscuits</strong>
+                    <p>A treat your furry friend will love!</p>
+                    <span class="price">€3.00</span>
+                </div>
+            </div>
         </div>
-        <div class="logo">
-            <img src="../images/Logo.webp" alt="Logo" />
-        </div>
-        <a href="../index.html"><button class="buttons"><img src="../images/icons/home.webp" alt="Home"></button></a> 
-        <a href="#" style="background-color:#1abc9c"><button class="buttons"><img src="../images/icons/menu.webp" alt="Menu"></button></a>   
-        <a href="../about/About.html"><button class="buttons"><img src="../images/icons/info.webp" alt="About Us"></button></a>
-        <a href="../ContactUs/ContactUs.html"><button class="buttons"><img src="../images/icons/contact.webp" alt="Contact Us"></button></a>
+        <button class="carousel-button prev">❮</button>
+        <button class="carousel-button next">❯</button>
     </div>
-        
+
     <!-- Lunch Menu -->
-    <div id="lunch" class="menu">
+    <div class="menu">
         <h2>Lunch</h2>
         <ul>
             <li>
@@ -72,9 +87,7 @@
                 <div>
                     <strong>Soup of the Day</strong>
                     <p>
-                        A daily selection of<br>
-                        homemade soup served<br>
-                        with crusty bread.
+                        A daily selection of homemade soup served with crusty bread.
                     </p>
                 </div>
                 <span class="price">€5.00</span>
@@ -83,7 +96,7 @@
     </div>
 
     <!-- Drinks Menu -->
-    <div id="drinks" class="menu">
+    <div class="menu">
         <h2>Drinks</h2>
         <ul>
             <li>
@@ -91,8 +104,7 @@
                 <div>
                     <strong>Americano</strong>
                     <p>
-                        A bold black coffee made<br>
-                        with premium espresso beans.
+                        A bold black coffee made with premium espresso beans.
                     </p>
                 </div>
                 <span class="price">€2.50</span>
@@ -102,9 +114,7 @@
                 <div>
                     <strong>Cappuccino</strong>
                     <p>
-                        A rich espresso topped<br>
-                        with steamed milk<br>
-                        and frothy foam.
+                        A rich espresso topped with steamed milk and frothy foam.
                     </p>
                 </div>
                 <span class="price">€3.00</span>
@@ -123,7 +133,7 @@
     </div>
 
     <!-- Doggie Treats Menu -->
-    <div id="doggie-treats" class="menu">
+    <div class="menu">
         <h2>Doggie Treats</h2>
         <ul>
             <li>
@@ -131,8 +141,7 @@
                 <div>
                     <strong>Premium Dog Food</strong>
                     <p>
-                        A bowl of premium dog food<br>
-                        for your furry friend.
+                        A bowl of premium dog food for your furry friend.
                     </p>
                 </div>
                 <span class="price">€4.50</span>
@@ -142,8 +151,7 @@
                 <div>
                     <strong>Dog Biscuits</strong>
                     <p>
-                        A Dog Biscuit<br>
-                        your dog will love.
+                        Dog biscuits your pooch will love.
                     </p>
                 </div>
                 <span class="price">€3.00</span>
@@ -153,7 +161,7 @@
                 <div>
                     <strong>Chew Toys</strong>
                     <p>
-                        Chew Toys for your pooch.
+                        Chew toys for your pooch to enjoy.
                     </p>
                 </div>
                 <span class="price">€3.50</span>
@@ -161,7 +169,6 @@
         </ul>
     </div>
 
-    <!-- External Scripts -->
-    <script src="../Scripts/sidepanel.js"></script> <!-- Links to the external JavaScript file -->
+    <script src="../Scripts/MenuScript.js" defer></script>
 </body>
 </html>

@@ -24,32 +24,27 @@ document.addEventListener("scroll", () => {
     });
 });
 
-// Toggle Navigation Bar Visibility - Andy
-const navButton = document.getElementById("navbutton");
-const iconBar = document.getElementById("iconbar");
+// New Carousel Functionality - Andy
+document.addEventListener("DOMContentLoaded", () => {
+    const track = document.querySelector(".carousel-track");
+    const prevButton = document.querySelector(".carousel-button.prev");
+    const nextButton = document.querySelector(".carousel-button.next");
 
-navButton.addEventListener("click", () => {
-    const sidebar = document.getElementById("sidebar");
-    sidebar.classList.toggle("hidden"); // Toggle the hidden class for sidebar
-    iconBar.classList.toggle("hidden"); // Toggle the hidden class for icon bar
-});
+    let currentIndex = 0;
 
-// Responsive Sidebar Toggle for Smaller Screens
-const navButton2 = document.getElementById("navbutton2");
-navButton2.addEventListener("click", () => {
-    const sidebar = document.getElementById("sidebar");
-    sidebar.classList.toggle("hidden"); // Show/hide sidebar on click
-    iconBar.classList.toggle("hidden"); // Show/hide icon bar on click
-});
+    // Function to move carousel to the next item
+    nextButton.addEventListener("click", () => {
+        const items = document.querySelectorAll(".carousel-item");
+        currentIndex = (currentIndex + 1) % items.length; // Loop back to the start
+        track.style.transform = `translateX(-${currentIndex * 100}%)`;
+    });
 
-// Add Smooth Scrolling for Navigation Links
-document.querySelectorAll(".sidebar a").forEach((link) => {
-    link.addEventListener("click", (e) => {
-        e.preventDefault(); // Prevent default anchor behavior
-        const targetSection = document.querySelector(link.getAttribute("href"));
-        targetSection.scrollIntoView({
-            behavior: "smooth", // Smooth scrolling animation
-            block: "start", // Align to the top of the section
-        });
+    // Function to move carousel to the previous item
+    prevButton.addEventListener("click", () => {
+        const items = document.querySelectorAll(".carousel-item");
+        currentIndex = (currentIndex - 1 + items.length) % items.length; // Loop back to the end
+        track.style.transform = `translateX(-${currentIndex * 100}%)`;
     });
 });
+
+
