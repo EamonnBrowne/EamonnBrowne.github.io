@@ -2,15 +2,13 @@
 .menu {
     margin-top: 20px;
     background-color: #f8f9fa; /* Subtle light gray */
-    padding: 5px;
+    padding: 20px;
     border-radius: 10px; /* Rounded corners for sections */
-    /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);  Subtle shadow for depth */
     margin-bottom: 30px; /* Add spacing between sections */
-    margin-left: 3%; /* Space for the sidebar */
-    margin-right: 5%; /* Space so the price does not run off the screen */
+    margin-left: 15%; /* Space for the sidebar */
+    margin-right: 5%; /* Prevent content from running off the screen */
 }
 
-/* Menu Headings Styling */
 .menu h2 {
     font-size: 28px; /* Slightly larger for emphasis */
     font-weight: bold;
