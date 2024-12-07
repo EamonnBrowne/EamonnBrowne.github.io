@@ -4,8 +4,8 @@
     background-color: #f8f9fa; /* Subtle light gray */
     padding: 20px;
     border-radius: 10px; /* Rounded corners for sections */
-    /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);  Subtle shadow for depth */
     margin-bottom: 30px; /* Add spacing between sections */
+<<<<<<< HEAD
 <<<<<<< HEAD
     margin-left: 15%; /* Space for the sidebar */
     margin-right: 5%; /* Prevent content from running off the screen */
@@ -57,6 +57,14 @@
 
 .carousel .price {
     font-size: 16px;
+=======
+    margin-left: 15%; /* Space for the sidebar */
+    margin-right: 5%; /* Prevent content from running off the screen */
+}
+
+.menu h2 {
+    font-size: 28px; /* Slightly larger for emphasis */
+>>>>>>> cfcd7a6d02e525cc51a0364942f347bcc7e36ad4
     font-weight: bold;
     color: #1abc9c;
     align-self: flex-start; /* Align to the top */
@@ -149,6 +157,7 @@
     margin: 0; /* Reset margins */
 }
 
+<<<<<<< HEAD
 /* Responsive Design */
 @media (max-width: 600px) {
     .menu {
@@ -160,6 +169,9 @@
         width: 80px; /* Smaller image size for mobile */
     }
 }
+=======
+
+>>>>>>> cfcd7a6d02e525cc51a0364942f347bcc7e36ad4
 
 /* styling for the collapsible menus */
 .collapsible {
@@ -201,3 +213,11 @@
     transition: max-height 0.2s ease-out;
     background-color: #f1f1f1;
   }
+
+  /* Responsive Design */
+@media (max-width: 600px) {
+
+    .menu img {
+        width: 80px; /* Compact image size */
+    }
+}

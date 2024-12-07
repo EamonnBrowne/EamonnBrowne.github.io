@@ -1,12 +1,18 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="../Styles/Style.css"> <!-- Link to the external CSS file -->
-<link rel="stylesheet" href="../Styles/StyleMenu.css"> <!-- Link to the external CSS file -->
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Import font from Google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../Styles/Style.css"> <!-- Link to the external CSS file -->
+    <link rel="stylesheet" href="../Styles/StyleMenu.css"> <!-- Link to the external CSS file -->
+    <title>Bran agus Sceólang - Menu</title>
 </head>
 <body>
+<<<<<<< HEAD
 <<<<<<< HEAD
 
     <!-- Navigation -->
@@ -59,16 +65,21 @@
         <h2>Lunch</h2>
 =======
     <!-- navigation -->
+=======
+
+   <!-- navigation --- this is start of the code for the sidebarr -->
+>>>>>>> cfcd7a6d02e525cc51a0364942f347bcc7e36ad4
    
     
-    <div class="sidebar" id="sidebar">  
-      <div>    
-       <button class="navbutton" id="navbutton" ><img src="../images/icons/nav.webp" alt="Home"></button>
-      </div>     
-      <div class="logo">
-          <img src="../images/Logo.webp" alt="Logo" />
-      </div>
+   <div class="sidebar" id="sidebar">  
+    <div>    
+     <button class="navbutton" id="navbutton" ><img src="../images/icons/nav.webp" alt="Home"></button>
+    </div>     
+    <div class="logo">
+        <img src="../images/Logo.webp" alt="Logo" />
+    </div>
 
+<<<<<<< HEAD
       <a href="../index.html">Home</a> <!-- Eamonn -->
       <a href="#" class="active">Menu</a>   <!-- Andrew-->
       <a href="../about/About.html">About Us</a> <!--Eamonn-->
@@ -205,47 +216,33 @@
           <span class="price">€3.50</span>
       </li>
   </ul>
+=======
+    <a href="../index.html">Home</a> <!-- Eamonn -->
+    <a href="#" class="active">Menu</a>   <!-- Andrew-->
+    <a href="../about/About.html">About Us</a> <!--Eamonn-->
+    <a href="ContactUs/ContactUs.html">Contact Us</a><!--Michael-->
+>>>>>>> cfcd7a6d02e525cc51a0364942f347bcc7e36ad4
 </div>
- 
-  <button class="collapsible">Doggie Treats</button>
-  <div class="content menu">
-    <ul>
-        <li>
-            <img src="../images/Dogfood.webp" alt="Premium Dog Food">
-            <div>
-                <strong>Premium Dog Food</strong>
-                <p>
-                    A bowl of premium dog food<br>
-                    for your furry friend.
-                </p>
-            </div>
-            <span class="price">€4.50</span>
-        </li>
-        <li>
-            <img src="../images/DogBiscuit.webp" alt="Dog Biscuits">
-            <div>
-                <strong>Dog Biscuits</strong>
-                <p>
-                    A Dog Biscuit<br>
-                    your dog will love.
-                </p>
-            </div>
-            <span class="price">€3.00</span>
-        </li>
-        <li>
-            <img src="../images/ChewToys.webp" alt="Chew Toys">
-            <div>
-                <strong>Chew Toys</strong>
-                <p>
-                    Chew Toys for your pooch.
-                </p>
-            </div>
-            <span class="price">€3.50</span>
-        </li>
-    </ul>
-  </div>
-</div>
+  <!-- iconbar class is hidden until either unhide by clicking the Nav button or the screen is resized to below 870px
+   at which point the sidebar classs is hidden and the iconbar is unhid-->
+<div class="iconbar" id="iconbar" > 
+    <div>    
+        <button class="navbutton" id="navbutton2" ><img src="../images/icons/nav.webp" alt="Home"></button>
+    </div>
+    
+    <div class="logo">
+        <img src="../images/Logo.webp" alt="Logo" />
+    </div>
+    <!-- could not get the button on the active page to change colour in an external CSS so had to use inline CSS-->
+    <a href="../index.html" ><button class="buttons" style="background-color:#1abc9c"><img src="../images/icons/home.webp" alt="Home"></button></a> 
+    <a class="iconactive"><button class="buttons"><img src="../images/icons/menu.webp" alt="Menu"></button></a>   
+    <a href="../about/About.html"><button class="buttons"><img src="../images/icons/info.webp" alt="About Us"></button></a>
+    <a href="../ContactUs/ContactUs.html"><button class="buttons"><img src="../images/icons/contact.webp" alt="Contact Us"></button></a>
 
+</div>
+<!-- navigation --- this is the end of the code for the sidebarr -->
+
+<<<<<<< HEAD
 <<<<<<< HEAD
     <!-- Drinks Menu -->
     <div class="menu">
@@ -327,5 +324,136 @@
 <script src="../Scripts/sidepanel.js"></script><!-- Links to the external javascript file-->
 
 >>>>>>> 4b9e2f683af24bc1977dffaf35c64f3ac04c87f8
+=======
+    <!-- Main Content -->
+    <div class="main-content">
+        <h2>Bran agus Sceólang - Menu</h2>
+        
+        <!-- Collapsible Menu Sections -->
+        <button class="collapsible">Breakfast</button>
+        <div class="content menu">
+            <ul>
+                <li>
+                    <img src="../images/pancake.webp" alt="Pancakes">
+                    <div>
+                        <strong>American Pancakes</strong>
+                        <p>Fluffy stack of American-style pancakes served with maple syrup and fresh berries.</p>
+                        <span class="price">€5.99</span>
+                    </div>
+                </li>
+                <li>
+                    <img src="../images/AvoToast.webp" alt="Avocado Toast">
+                    <div>
+                        <strong>Avocado Toast</strong>
+                        <p>Toasted sourdough topped with smashed avocado, chili flakes, and olive oil.</p>
+                        <span class="price">€7.50</span>
+                    </div>
+                </li>
+                <li>
+                    <img src="../images/Full-Irish.webp" alt="Full Irish Breakfast">
+                    <div>
+                        <strong>Full Irish Breakfast</strong>
+                        <p>A hearty plate with sausages, bacon, eggs, black pudding, white pudding, and baked beans.</p>
+                        <span class="price">€9.99</span>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+        <button class="collapsible">Lunch</button>
+        <div class="content menu">
+            <ul>
+                <li>
+                    <img src="../images/ChickenCeasar.webp" alt="Chicken Caesar Salad">
+                    <div>
+                        <strong>Chicken Caesar Salad</strong>
+                        <p>Fresh romaine lettuce tossed with grilled chicken, croutons, and Caesar dressing.</p>
+                        <span class="price">€10.50</span>
+                    </div>
+                </li>
+                <li>
+                    <img src="../images/GrilledCheese.webp" alt="Grilled Cheese Sandwich">
+                    <div>
+                        <strong>Grilled Cheese Sandwich</strong>
+                        <p>Classic comfort food with melted cheddar on buttery toasted bread.</p>
+                        <span class="price">€6.99</span>
+                    </div>
+                </li>
+                <li>
+                    <img src="../images/Soup.webp" alt="Soup of the Day">
+                    <div>
+                        <strong>Soup of the Day</strong>
+                        <p>A daily selection of homemade soup served with crusty bread.</p>
+                        <span class="price">€5.00</span>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+        <button class="collapsible">Drinks</button>
+        <div class="content menu">
+            <ul>
+                <li>
+                    <img src="../images/Americano.webp" alt="Americano">
+                    <div>
+                        <strong>Americano</strong>
+                        <p>A bold black coffee made with premium espresso beans.</p>
+                        <span class="price">€2.50</span>
+                    </div>
+                </li>
+                <li>
+                    <img src="../images/Cappuccino.webp" alt="Cappuccino">
+                    <div>
+                        <strong>Cappuccino</strong>
+                        <p>A rich espresso topped with steamed milk and frothy foam.</p>
+                        <span class="price">€3.00</span>
+                    </div>
+                </li>
+                <li>
+                    <img src="../images/OJ.webp" alt="Orange Juice">
+                    <div>
+                        <strong>Fresh Orange Juice</strong>
+                        <p>Freshly squeezed orange juice for a refreshing start to your day.</p>
+                        <span class="price">€3.50</span>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+        <button class="collapsible">Doggie Treats</button>
+        <div class="content menu">
+            <ul>
+                <li>
+                    <img src="../images/Dogfood.webp" alt="Premium Dog Food">
+                    <div>
+                        <strong>Premium Dog Food</strong>
+                        <p>A bowl of premium dog food for your furry friend.</p>
+                        <span class="price">€4.50</span>
+                    </div>
+                </li>
+                <li>
+                    <img src="../images/DogBiscuit.webp" alt="Dog Biscuits">
+                    <div>
+                        <strong>Dog Biscuits</strong>
+                        <p>A Dog Biscuit your dog will love.</p>
+                        <span class="price">€3.00</span>
+                    </div>
+                </li>
+                <li>
+                    <img src="../images/ChewToys.webp" alt="Chew Toys">
+                    <div>
+                        <strong>Chew Toys</strong>
+                        <p>Chew toys for your pooch to enjoy.</p>
+                        <span class="price">€3.50</span>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- External JavaScript -->
+    <script src="../Scripts/MenuScript.js" defer></script>
+    <script src="../Scripts/sidepanel.js" defer></script>
+>>>>>>> cfcd7a6d02e525cc51a0364942f347bcc7e36ad4
 </body>
 </html>

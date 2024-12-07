@@ -14,8 +14,7 @@
 </head>
 <body>
 
-      <!-- navigation -->
-   
+       <!-- navigation --- this is start of the code for the sidebarr -->
     
 	  <div class="sidebar" id="sidebar">  
         <div>    
@@ -29,6 +28,8 @@
         <a href="../about/About.html" >About Us</a> <!--Eamonn-->
         <a href="#" class="active">Contact Us</a><!--Michael-->
     </div>
+	 <!-- iconbar class is hidden until either unhide by clicking the Nav button or the screen is resized to below 870px
+     at which point the sidebar classs is hidden and the iconbar is unhid-->
     <div class="iconbar" id="iconbar" > 
         <div>    
             <button class="navbutton" id="navbutton2" ><img src="../images/icons/nav.webp" alt="Home"></button>
@@ -36,12 +37,13 @@
         <div class="logo">
             <img src="../images/Logo.webp" alt="Logo" />
         </div>
-
+		<!-- could not get the button on the active page to change colour in an external CSS so had to use inline CSS-->
 		<a href="../index.html"><button class="buttons"><img src="../images/icons/home.webp" alt="Home"></button></a> 
         <a href="../Menu/Menu.html"><button class="buttons"><img src="../images/icons/menu.webp" alt="Menu"></button></a>
         <a href="../about/About.html"><button class="buttons"><img src="../images/icons/info.webp" alt="About Us"></button></a>
         <a href="#"><button class="buttons active" style="background-color:#1abc9c"><img src="../images/icons/contact.webp" alt="Contact Us"></button></a> 
     </div>
+	  <!-- navigation --- this is the end of the code for the sidebarr -->
 
 	<div class="flex-container-1"> <!--Holds contact form-->
 		<div class="container-box-1"><!--container within flex-->
