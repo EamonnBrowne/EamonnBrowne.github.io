@@ -27,7 +27,7 @@ html, body {
     
 }
 
-.sidebar a {
+.sidebar a { /*Sytling for the anchor nodes  in the sidebar*/
   display: block;
   color: black;
   padding: 15px 20px;
@@ -40,7 +40,7 @@ html, body {
   transition: background-color 0.3s ease;
 }
 
-.sidebar button {
+.sidebar button { /*Sytling for the menu button in the sidebar*/
   padding: 10px 20px;
 	background: white;
 	color: black;
@@ -87,7 +87,7 @@ html, body {
 
 }
 
-.iconbar button {
+.iconbar button { /* seetings for the icon bar on the left of the page*/ 
   padding: 10px 20px;
 	background: white;
 	color: black;
@@ -203,18 +203,6 @@ html, body {
     text-align: center; /* Center align the heading */
   }
 
-/* For screens with a minimum width of 1200px */
-  @media (max-width: 1200px) {
-    .image-container {
-      display: flex;
-      justify-content: center;
-      flex-direction: column;
-      object-fit: cover;
-    }
-    .about {
-        flex-direction: column;
-      }
-  }
 
 
 /*Michael Toomey's appended style sheet*/
@@ -344,6 +332,20 @@ input[type=text],input[type=email], select, textarea {
 	
 	margin-right:0;
 	}
+  
+/* For screens with a minimum width of 1200px */
+@media (max-width: 1200px) {
+  .image-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    object-fit: cover;
+  }
+  .about {
+      flex-direction: column;
+    }
+}
+
 	input[type=text],input[type=email], select, textarea {
 	width: 250px; /*Make input areas all the same size*/
 	margin-right:0;/*creates space*/
