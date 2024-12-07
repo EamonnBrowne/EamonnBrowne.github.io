@@ -89,12 +89,7 @@
     margin-top: 0; /* Ensure price aligns perfectly with the text block */
 }
 
-/* Responsive Design */
-@media (max-width: 600px) {
-    .menu {
-        margin-left: 23%; /* Adjust margin for smaller screens */
-    }
-}
+
 
 /* styling for the collapsible menus */
 .collapsible {
@@ -136,3 +131,11 @@
     transition: max-height 0.2s ease-out;
     background-color: #f1f1f1;
   }
+
+  /* Responsive Design */
+@media (max-width: 600px) {
+
+    .menu img {
+        width: 80px; /* Compact image size */
+    }
+}
