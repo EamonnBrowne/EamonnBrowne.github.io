@@ -2,12 +2,16 @@
 <html>
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="../Styles/Style.css"> <!-- Link to the external CSS file -->
-<link rel="stylesheet" href="../Styles/StyleMenu.css"> <!-- Link to the external CSS file -->
+<!-- Import font from Google -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../Styles/Style.css"> <!-- Link to the external CSS file which is used by all pages-->
+<link rel="stylesheet" href="../Styles/StyleMenu.css"> <!-- Link to the external CSS file with unique items for the menu-->
 
 </head>
 <body>
-    <!-- navigation -->
+    <!-- navigation --- this is start of the code for the sidebarr -->
    
     
     <div class="sidebar" id="sidebar">  
@@ -23,6 +27,8 @@
       <a href="../about/About.html">About Us</a> <!--Eamonn-->
       <a href="ContactUs/ContactUs.html">Contact Us</a><!--Michael-->
   </div>
+    <!-- iconbar class is hidden until either unhide by clicking the Nav button or the screen is resized to below 870px
+     at which point the sidebar classs is hidden and the iconbar is unhid-->
   <div class="iconbar" id="iconbar" > 
       <div>    
           <button class="navbutton" id="navbutton2" ><img src="../images/icons/nav.webp" alt="Home"></button>
@@ -31,16 +37,22 @@
       <div class="logo">
           <img src="../images/Logo.webp" alt="Logo" />
       </div>
+      <!-- could not get the button on the active page to change colour in an external CSS so had to use inline CSS-->
       <a href="../index.html" ><button class="buttons" style="background-color:#1abc9c"><img src="../images/icons/home.webp" alt="Home"></button></a> 
       <a class="iconactive"><button class="buttons"><img src="../images/icons/menu.webp" alt="Menu"></button></a>   
       <a href="../about/About.html"><button class="buttons"><img src="../images/icons/info.webp" alt="About Us"></button></a>
       <a href="../ContactUs/ContactUs.html"><button class="buttons"><img src="../images/icons/contact.webp" alt="Contact Us"></button></a>
 
   </div>
+  <!-- navigation --- this is the end of the code for the sidebarr -->
+
+
   <div class="main-content ">
+<!--create a collapsible menu page used in conjunction with menuscript.js and StylesMenu.css
+each button with class collapisble is an element in the munu-->
   <h2>Bran agus Sceólang - Menu</h2>
-  <button class="collapsible ">Breakfast</button>
-  <div class="content menu">
+  <button class="collapsible activeMenu">Breakfast</button>
+  <div class="content menu  ">
     <h2>Breakfast</h2>
         <ul>
             <li>
@@ -195,7 +207,7 @@
     </ul>
   </div>
 </div>
-
+<!--load the javascrit that controls the collapsible menu and the scipt that controls the side panel-->
 <script src="../Scripts/MenuScript.js"></script><!--Links to the external javascript file-->
 <script src="../Scripts/sidepanel.js"></script><!-- Links to the external javascript file-->
 
