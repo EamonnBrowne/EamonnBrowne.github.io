@@ -4,10 +4,15 @@
     background-color: #f8f9fa; /* Subtle light gray */
     padding: 20px;
     border-radius: 10px; /* Rounded corners for sections */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);  Subtle shadow for depth */
     margin-bottom: 30px; /* Add spacing between sections */
+<<<<<<< HEAD
     margin-left: 15%; /* Space for the sidebar */
     margin-right: 5%; /* Prevent content from running off the screen */
+=======
+    margin-left: 3%; /* Space for the sidebar */
+    margin-right: 5%; /* Space so the price does not run off the screen */
+>>>>>>> 4b9e2f683af24bc1977dffaf35c64f3ac04c87f8
 }
 
 /* Carousel Styling */
@@ -155,3 +160,44 @@
         width: 80px; /* Smaller image size for mobile */
     }
 }
+
+/* styling for the collapsible menus */
+.collapsible {
+    background-color: #777;
+    color: white;
+    cursor: pointer;
+    padding: 18px;
+    width: 95%;
+    border: none;
+    border-radius: 5px;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    margin-left: 2%; /* Space for the sidebar */
+    margin-right: 15%;
+  }
+  
+  /* activeMenu class Id set by event listener in the MenuScript.js*/
+  .activeMenu, .collapsible:hover {
+    background-color: #555;
+  }
+  
+  .collapsible:after {
+    content: '\002B';
+    color: white;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+  }
+/* activeMenu class Id set by event listener in the MenuScript.js*/
+  .activeMenu:after {
+    content: "\2212";
+  }
+  
+  .content {
+    padding: 0 18px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    background-color: #f1f1f1;
+  }

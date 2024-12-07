@@ -1,8 +1,7 @@
-// Listen for scroll events to update active link dynamically
-document.addEventListener("scroll", () => {
-    const sections = document.querySelectorAll(".section"); // All sections in the menu
-    const navLinks = document.querySelectorAll(".sidebar a"); // All sidebar links
+var coll = document.getElementsByClassName("collapsible");
+var i;
 
+<<<<<<< HEAD
     let currentSection = "";
 
     // Loop through sections to find the one currently in view
@@ -48,3 +47,16 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 
+=======
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("activeMenu");
+    var content = this.nextElementSibling;
+    if (content.style.maxHeight){
+      content.style.maxHeight = null;
+    } else {
+      content.style.maxHeight = content.scrollHeight + "px";
+    } 
+  });
+}
+>>>>>>> 4b9e2f683af24bc1977dffaf35c64f3ac04c87f8
